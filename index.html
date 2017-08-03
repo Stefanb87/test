@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Routes Tracker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<section id="routes">
+		<h1>Find desired route</h1>
+		<div class="container">
+			<div class="formBox">
+				<form id="contactForm" class="contactForm" method="get" action="http://maps.google.com/maps" target="_blank">
+					<div class="matDiv">
+						<label for="saddr" class="matLabel">Enter your starting address:</label>
+						<input id="saddr" class="matInput" type="text" name="saddr" required>
+					</div>
+					<div class="matDiv">
+						<label for="daddr" class="matLabel">Enter your ending address:</label>
+						<input id="daddr" class="matInput" type="text" name="daddr" required>
+					</div>
+					<div>
+						<input id="submitRoute" type="submit" value="Get directions">
+					</div>
+				</form>
+			</div><!-- .formBox -->
+		</div>
+	</section>
+
+	<section id="savedRoutes">
+		<div id="listWrapper">
+			<h2>My saved routes</h2>
+		</div>
+	</section>
+
+	<section id="myLocation">
+		<h3 id="location">Discover your position</h3>
+		<button id="try" onclick="getLocation()">Try It</button>
+		<div id="mapholder"></div>
+	</section>
+
+	<footer>
+		<div class="footerContent text-center">
+			<div class="socialIcons">
+				<a href="https://www.facebook.com/stefan.bukovski" target="_blank"><i class="fa fa-facebook-square liSocial" aria-hidden="true"></i></a>
+			  	<a href="https://www.linkedin.com/in/stefan-bukovski-90454135/" target="_blank"><i class="fa fa-linkedin-square liSocial" aria-hidden="true"></i></a>
+			  	<a href="https://github.com/Stefanb87" target="_blank"><i class="fa fa-github liSocial" aria-hidden="true"></i></a>
+			</div>
+			<div>
+				<p>Copyright &copy; 2017 <span id="footerSpan">Stefan Bukovski</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" class="scrollToTop"><span id="fingerToTop">&#9758;</span></a>
+	
+
+
+<!-- Bootstrap core JavaScript, and other scripts.
+	 Placed at the end of the document,
+	 so the pages load faster
+================================================== -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap core JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!-- Font Awesome Icons -->
+<script src="https://use.fontawesome.com/1bd0892c8e.js"></script>
+<!-- Google maps API -->
+<script src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyArXku1GG4yYKvosK8AevNb0kI4JrKI34Y"></script>
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+
+<!-- Custom script -->
+<script src="routesJS.js"></script>
+
+</body>
+</html>
