@@ -32,8 +32,8 @@ h1 {
 }
 
 #routes {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/04/15/14/48/aircraft-723888_960_720.jpg');
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/04/15/14/48/aircraft-723888_960_720.jpg');
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('aircraft.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('aircraft.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -189,8 +189,8 @@ h2 {
 /***** CSS for discover position section *****/
 
 #myLocation {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2016/09/25/19/28/fantasy-world-1694423_960_720.jpg');
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2016/09/25/19/28/fantasy-world-1694423_960_720.jpg');
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('world.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('world.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
